@@ -1,4 +1,5 @@
-
+/*Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
     padding: 0;
@@ -7,3 +8,146 @@
     border: none;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1b1d;
+    color: #fff;
+}
+
+/*Code for adjusting NavBar */
+nav{
+    background-color: #3C4245;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    margin: 0;
+}
+
+.link a  {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3;
+}
+
+.link a:hover {
+    background-color: #464d51;
+    border-radius: 5px; /*added slight rounding for aestetic*/
+}
+
+
+.header-and-about{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 430px;
+    padding: 150px;
+    font-size: x-large;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.about-me {
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+.RS-logo {
+    margin-left: 2px;
+    padding-left: 2px;
+    height: 25vh;
+    max-width: auto;
+}
+
+
+/*Code for adjusting Project img/links */
+
+.projects {
+    text-align: center
+}
+.h2-projects {
+    font-size: 3vh;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px, 0;
+}
+
+.flex-box-images {
+    margin: 5px;
+    padding: 5px;
+    height: 40vh;
+    width: auto;
+}
+
+.flex-box-images2 {
+    margin: 5px;
+    padding: 5px;
+    height: 60vh;
+    width: auto;
+}
+
+.image-container a{
+    flex: 1;
+    transition: border-color 0.3s;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.image-container a:hover {
+    border-color: #007AFF;
+}
+
+/*Code for adjusting Footer logos */
+.IG-Logo , .GitHub-Cat-Logo {
+    height: 5vh;
+    width: auto;
+    margin: 5px;
+}
+
+.footer-bar {
+    background-color: #1b1b1d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list-text {
+    margin: 5px;
+    padding: 0 10px;
+    color: white;
+    display: flex;
+    font-weight:bold;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
