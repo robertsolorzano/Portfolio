@@ -45,13 +45,19 @@ nav{
     border-radius: 5px; /*added slight rounding for aestetic*/
 }
 
+.motto {
+    margin-top: 200px;
+    text-align: center;
+    font-style: italic;
+}
+
 
 .header-and-about{
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 430px;
+    margin-top: 50px;
+    margin-bottom: 450px;
     padding: 150px;
-    font-size: x-large;
+    font-size: 22px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +73,7 @@ nav{
 .RS-logo {
     margin-left: 2px;
     padding-left: 2px;
-    height: 25vh;
+    height: 27vh;
     max-width: auto;
 }
 
@@ -78,7 +84,7 @@ nav{
     text-align: center
 }
 .h2-projects {
-    font-size: 3vh;
+    font-size: 44px;
     margin-bottom: 20px;
 }
 
@@ -106,6 +112,7 @@ nav{
 }
 
 .image-container a{
+    position: relative;
     flex: 1;
     transition: border-color 0.3s;
     border: 2px solid transparent;
@@ -116,6 +123,7 @@ nav{
 .image-container a:hover {
     border-color: #007AFF;
 }
+
 
 /*Code for adjusting Footer logos */
 .IG-Logo , .GitHub-Cat-Logo {
