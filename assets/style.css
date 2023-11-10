@@ -55,8 +55,10 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
 
-
+.itallic {
+    font-style: italic;
 }
 
 .RS-logo {
