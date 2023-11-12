@@ -27,7 +27,7 @@ body {
     font-size: 80px;
     font-weight: normal;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -72,7 +72,7 @@ nav{
 
 .header-and-about{
     display: flex;
-    margin-top: 240px;
+    margin-top: 340px;
     margin-bottom: 650px;
     padding: 150px;
     font-size: 22px;
@@ -115,6 +115,11 @@ nav{
     padding: 20px, 0;
 }
 
+.flex-box-images , .flex-box-images2 {
+    border-style: solid;
+    border-color: #464d51;
+    border-width: 6px;
+}
 
 .flex-box-images {
     margin: 0px;
@@ -145,23 +150,45 @@ nav{
 }
 
 .overlay-text {
-    color: #1b1b1d;
+    color: #ffffff;
     position: absolute;
     bottom: 80px;
-    left: 10px;
+    left: 4px;
     padding: 5px 10px;
-    
+    border-top: solid;
+    border-right: solid;
 
 }
 
 .overlay-text2 {
-    color: #1b1b1d;
+    color: #ffffff;
     position: absolute;
     bottom: 60px;
-    left: 10px;
+    left: 4px;
+    padding: 5px 10px;
+    border-bottom: solid;
+    border-right: solid;
+
+}
+
+.overlay-text3 {
+    color: #000000;
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
     padding: 5px 10px;
 
 }
+
+.overlay-text4 {
+    color: #000000;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    padding: 5px 10px;
+
+}
+
 
 
 
@@ -172,6 +199,11 @@ nav{
     margin: 5px;
 }
 
+#contact{
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#464d51;
+}
 .footer-bar {
     background-color: #1b1b1d;
     padding: 20px 0;
