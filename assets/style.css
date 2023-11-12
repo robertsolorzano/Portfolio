@@ -65,8 +65,8 @@ nav{
 }
 
 .link a:hover {
-    background-color: #464d51;
-    border-radius: 5px; /*added slight rounding for aestetic*/
+    background-color: #787878;
+    border-radius: 5px;
 }
 
 
@@ -117,7 +117,7 @@ nav{
 
 .flex-box-images , .flex-box-images2 {
     border-style: solid;
-    border-color: #464d51;
+    border-color: #787878;
     border-width: 6px;
 }
 
@@ -146,50 +146,46 @@ nav{
 
 .image-container a:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.overlay-text {
-    color: #ffffff;
-    position: absolute;
-    bottom: 80px;
-    left: 4px;
-    padding: 5px 10px;
-    border-top: solid;
-    border-right: solid;
 
+
+
+.overlay-text {
+    position: absolute;
+    text-align: left;
+    color: #ffffff;
+    border: solid;
+    border-color: #ffffff;
+    background-color: #787878;
+    bottom: 80px;
+    left: 12px;
+    padding: 4px;
 }
 
 .overlay-text2 {
-    color: #ffffff;
     position: absolute;
-    bottom: 60px;
-    left: 4px;
-    padding: 5px 10px;
-    border-bottom: solid;
-    border-right: solid;
-
+    text-align: left;
+    color: #ffffff;
+    border: solid;
+    border-color: #fff;
+    background-color: #787878;
+    bottom: 80px;
+    left: 12px;
+    padding: 4px;
 }
 
 .overlay-text3 {
-    color: #000000;
     position: absolute;
+    text-align: left;
+    color: #ffffff;
+    border: solid;
+    border-color: #000;
+    background-color: #787878;
     bottom: 60px;
-    left: 20px;
-    padding: 5px 10px;
-
+    left: 40px;
+    padding: 4px;
 }
-
-.overlay-text4 {
-    color: #000000;
-    position: absolute;
-    bottom: 40px;
-    left: 20px;
-    padding: 5px 10px;
-
-}
-
-
 
 
 /*Code for adjusting Footer logos */
@@ -202,7 +198,7 @@ nav{
 #contact{
     border-style: solid;
     border-radius: 10px;
-    border-color:#464d51;
+    border-color:#787878;
 }
 .footer-bar {
     background-color: #1b1b1d;
