@@ -26,11 +26,34 @@ body {
 .svg-text {
     font-size: 80px;
     font-weight: normal;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
+
+.svg-container {
+    font-weight: bold;
+    position: absolute;
+    top: 29%;
+    left: 70vh;
+}
+
+button {
+    position: relative;
+    border: solid;
+    border-color: #fff;
+    border-radius: 20px;
+    color: #fff;
+    background-color:transparent;
+    padding: 20px;
+    top: 30px;
+    left: 18vh;
+    transition: background-color ease-out 0.7s;
+}
+
+button:hover {
+    background-color:#007cff;
+    transition: background-color  0.7s;
+}
+
 
 .svg-img {
     width: 100%;
@@ -141,11 +164,11 @@ nav{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 2px solid transparent;
     border-radius: 10px;
-    margin-bottom: 300px;
+    margin-bottom: 600px;
 }
 
 .image-container a:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 
