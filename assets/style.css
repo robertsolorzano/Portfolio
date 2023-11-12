@@ -15,7 +15,31 @@ body {
     color: #fff;
 }
 
+.svg-bg {
+    position: relative;
+}
+
+.svg-section {
+    position: relative;
+}
+
+.svg-text {
+    font-size: 80px;
+    font-weight: normal;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-img {
+    width: 100%;
+    height: auto;
+}
+
 /*Code for adjusting NavBar */
+
+
 nav{
     background-color: #3C4245;
     padding: 10px 0;
@@ -48,7 +72,7 @@ nav{
 
 .header-and-about{
     display: flex;
-    margin-top: 50px;
+    margin-top: 240px;
     margin-bottom: 650px;
     padding: 150px;
     font-size: 22px;
@@ -72,14 +96,17 @@ nav{
 /*Code for adjusting Project img/links */
 
 .projects {
-    text-align: center
+    text-align: center;
 }
 .h2-projects {
+    padding-top: 200px; 
+    margin-top: -200px;
     font-size: 44px;
-    margin-bottom: 20px;
 }
 
+
 .image-container {
+    position: relative;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -88,16 +115,17 @@ nav{
     padding: 20px, 0;
 }
 
+
 .flex-box-images {
-    margin: 5px;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
     height: 40vh;
     width: auto;
 }
 
 .flex-box-images2 {
-    margin: 5px;
-    padding: 5px;
+    margin-top: 50px;
+    padding: 0px;
     height: 60vh;
     width: auto;
 }
@@ -105,15 +133,36 @@ nav{
 .image-container a{
     position: relative;
     flex: 1;
-    transition: border-color 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 2px solid transparent;
     border-radius: 10px;
-    margin: 20px;
+    margin-bottom: 300px;
 }
 
 .image-container a:hover {
-    border-color: #007AFF;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.overlay-text {
+    color: #1b1b1d;
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    padding: 5px 10px;
+    
+
+}
+
+.overlay-text2 {
+    color: #1b1b1d;
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    padding: 5px 10px;
+
+}
+
 
 
 /*Code for adjusting Footer logos */
