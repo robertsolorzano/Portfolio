@@ -42,8 +42,9 @@
 
             Coding? It's more than just lines of code for me. It's a way to bring my ideas to life. But when I'm not tangled up in coding, you can find me lost in music. I'm all about jamming on multiple instruments and dabbling in music production. It's not just a hobby; it's part of who I am.
 
-            I'm exploring ways to intertwine my musical creativity with my web development skills. Imagine creating a website as one composes a melody – where each line of code harmonizes with an element of design. Whether it's orchestrating code or composing music, I believe in creating experiences that <span class="itallic">resonate</span>.
-                <br><br>
+            I'm exploring ways to intertwine my musical creativity with my web development skills. Creating applications as one composes a melody where each line of code harmonizes with an element of design. 
+            <br> <br>
+            Whether it's orchestrating code or composing music, I believe in creating experiences that <span class="itallic">resonate</span>.
             Stay tuned to see how I harmonize these worlds, crafting digital symphonies that engage and inspire!
             
         </p>
@@ -56,34 +57,71 @@
     </header>
     
     <article id="projects" class="projects">
-        <h2 class="h2-projects">My Projects</h2>
+        <div class="project-container">
+            <h2 class="h2-projects">My Projects</h2>
+        </div>
 
         <figure>
             <div class="image-container">
+
                 <a href="https://github.com/robertsolorzano/Horiseon">
                     
                     <img class="flex-box-images2" src="assets/images/SEO-Preview-Full.jpeg" alt="project-image-1">
-                    <div class="overlay-container">
-                        <p class="overlay-text">Horiseon <br> 
-                            HTML/CSS
-                        </p>
-                    </div>
+                        <div class="hover-text">A webpage designed for Horiseon: The Leader in Search Engine Optimiazation and Social Media Marketing.
+                            This webpage contains stylized boxes with information and a working navbar that directs you to the desired content.
+                            <br><br>
+                            <ul class="hover-list">
+                                <h3>Key Features:</h3>
+                                <li>Semantice HTML Elements</li>
+                                <li>Functioning NavBar</li>
+                                <li>Elegant Layout</li>
+                            </ul>
+                            
+                        </div>
+                        <div class="overlay-container">
+                            <p class="overlay-text">Horiseon <br> 
+                                HTML/CSS
+                            </p>
+                        </div>
                 </a>
 
                 <a href="">
                     <img class="flex-box-images" src="assets/images/Track-Match-FullData.jpeg" alt="project-image-2">
-                    <div class="overlay-container">
-                        <p class="overlay-text2">Track Match <br>HTML/CSS/JavaScript
-                        </p>
-                    </div>
+                        <div class="hover-text2">
+                            <h3>In development</h3>
+                            Track Match: Designed and aimed toward DJs looking for relevant tracks based on certain criteria. In this case, the file is uploaded, and using Essentia.js (open source), we analyze the file, grabbing the key, mode, tempo, and time signature. It then queries the Spotify API using the title and grabs the recommended tracks back. It maintains this lop while also filtering only tracks that contain the same key and tempo as the user uploaded, returning very selective songs that are similar in multiple criteria per Spotify and matching the user's song features. This list would then be very useful, as it indicates multiple songs to transition to if mixing on the fly.
+                            <br><br>
+                            <ul class="hover-list">
+                                <h3>Key Features:</h3>
+                                <li>Spotify API</li>
+                                <li>Node.js</li>
+                                <li>Glassmorphism Styling</li>
+                                <li>30 Second previews & HQ Album Art</li>
+                            </ul>
+                                
+                        </div>
+                        <div class="overlay-container">
+                            <p class="overlay-text2">Track Match <br>HTML/CSS/JavaScript
+                            </p>
+                        </div>
                 </a>
 
-                <a href="https://robertsolorzano.github.io/prework-study-guide/">
+                <a href="https://github.com/robertsolorzano/prework-study-guide">
                     <img class="flex-box-images" src="assets/images/Prework-Preview.png" alt="project-image-3">
-                    <div class="overlay-container">
-                        <p class="overlay-text3">Prework Study Guide <br>HTML/CSS/JavaScript 
-                        </p>
-                    </div>
+                        <div class="hover-text3">A study guide created for other students starting their fall semester in a coding boot camp or working towards a CS Degree. It contains notes on topics suchs as HTML, CSS, Git, and JavaScript
+                            <br><br>
+                            <ul class="hover-list">
+                                <h3>Key Features:</h3>
+                                <li>Javascript Logic</li>
+                                <li>Chrome Dev tools interaction with User</li>
+                                <li>Useful information</li>
+                            </ul>
+                                
+                        </div>
+                        <div class="overlay-container">
+                            <p class="overlay-text3">Prework Study Guide <br>HTML/CSS/JavaScript 
+                            </p>
+                        </div>
                 </a>
 
             </div>
@@ -91,11 +129,13 @@
         </figure>
     </article>
 
+    <div class="gradient-footer">
 
+    </div>
 
      
     <!--Some contacts are placeholders nested in list tags untill i can figure out how to prompt email or call-->
-    <footer id="contact" class="footer-bar">
+    <footer class="footer-bar">
 
         <ul class="contact-list-text">
             <li>510.731.4674</li>
