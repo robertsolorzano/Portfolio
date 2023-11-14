@@ -223,15 +223,12 @@ nav{
     opacity: 1;
 }
 
-.flex-box-images , .flex-box-images2 {
+.flex-box-images, .flex-box-images2, .flex-box-images3 {
     border-style: solid;
     border-radius: 10px;
     overflow: hidden;
     border-color: #787878;
     border-width: 8px;
-}
-
-.flex-box-images {
     margin: 0px;
     padding: 0px;
     height: 40vh;
@@ -242,19 +239,13 @@ nav{
 .flex-box-images2 {
     margin-top: 40px;
     margin-left: -50px;
-    padding: 0px;
     height: 60vh;
-    width: auto;
-    margin-bottom: 40px;
 }
 
 .flex-box-images3 {
     margin-left: 18px;
-    padding: 0px;
-    height: 40vh;
-    width: auto;
-    margin-bottom: 40px;
 }
+
 
 
 .project-text-wrapper {
@@ -280,47 +271,35 @@ nav{
 }
 
 
-.overlay-text {
+.overlay-text, .overlay-text2, .overlay-text3 {
     position: relative;
-    right: 498%;
-    top: 200px;
     text-align: left;
     color: #ffffff;
     border: solid;
     border-radius: 5px;
-    border-color: #ffffff;
     background-color: #787878;
     opacity: 0;
     transition: opacity 1.2s;
+}
+
+.overlay-text {
+    right: 498%;
+    top: 200px;
+    border-color: #ffffff;
 }
 
 .overlay-text2 {
-    position: relative;
     right: 450%;
     bottom: 100px;
-    text-align: left;
-    color: #ffffff;
-    border: solid;
-    border-radius: 5px;
     border-color: #fff;
-    background-color: #787878;
-    opacity: 0;
-    transition: opacity 1.2s;
 }
 
 .overlay-text3 {
-    position: relative;
     right: 428%;
     top: 20px;
-    text-align: left;
-    color: #ffffff;
-    border: solid;
-    border-radius: 5px;
     border-color: #000;
-    background-color: #787878;
-    opacity: 0;
-    transition: opacity 1.2s;
 }
+
 
 .image-container a:hover .overlay-text {
     transition: opacity ease-in 1.2s;
@@ -341,20 +320,28 @@ nav{
 
 
 
-
 /*Code for adjusting Footer logos */
 .IG-Logo , .GitHub-Cat-Logo {
     height: 6vh;
     width: auto;
     margin: 5px;
-    box-shadow: #3C4245;
-    transition: box-shadow 1s;
+    padding: 5px;
+    box-shadow: 0px 0px 0px #6a7073; 
+    transition: box-shadow 0.5s; 
 }
 
-.IG-Logo:hover {
-    transition: box-shadow 1s;
+.IG-Logo {
+    border-radius: 20px;
 }
 
+.GitHub-Cat-Logo {
+    border-radius: 100%;
+}
+
+/* Add hover styles for the logos */
+.IG-Logo:hover, .GitHub-Cat-Logo:hover {
+    box-shadow: 0px 0px 20px #3C4245;
+}
 
 .footer-bar {
     background-color: #1b1b1d;
@@ -376,12 +363,13 @@ nav{
     padding: 0 10px;
     color: white;
     display: flex;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 18px;
     flex-direction: column;
     justify-content: center;
     list-style-type: none;
 }
+
 
 /* gradient style code from https://cssgradient.io/ */
 .footer-bar {
@@ -392,6 +380,5 @@ nav{
     rgba(27,27,29,1) 99.9999999999999%, 
     rgba(27,27,29,1) 100%);
 }
-
 
 
