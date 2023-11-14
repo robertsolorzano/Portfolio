@@ -10,6 +10,7 @@
 }
 
 
+/* Arrow Icon */
 .arrow-up-icon {
     position: fixed;
     transform: scale(0.4);
@@ -29,43 +30,52 @@
     transition: transform 0.1s ease-in; 
 }
 
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1b1b1d;
     color: #fff;
 }
 
+/* SVG Image */
 .svg-bg {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .svg-section {
     position: relative;
+    width: 100%; 
+    height: 100%;
+}
+
+.svg-container {
+    position: absolute;
+    left: 50%;
+    top: 450px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .svg-text {
     font-size: 80px;
     font-weight: normal;
-    position: relative;
-}
-
-.svg-container {
-    font-weight: bold;
-    position: absolute;
-    top: 29%;
-    left: 70vh;
-    margin: 4px;
-    padding: 4px;
 }
 
 .svg-img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 button {
-    font-size: 14.5px;
+    font-size: 15px;
+    justify-content: center;
     position: relative;
     border: solid;
     border-color: #fff;
@@ -73,19 +83,17 @@ button {
     color: #fff;
     background-color:transparent;
     padding: 20px;
-    top: 30px;
-    left: 18vh;
-    transition: background-color ease-out 0.7s;
+    right: 20px;
+    top: 25px;
+    transition: background-color ease-out 0.5s;
 }
 
 button:hover {
     background-color:#007cff;
-    transition: background-color  0.7s;
+    transition: background-color  0.5s;
 }
 
 /*Code for adjusting NavBar */
-
-
 nav{
     background-color: #3C4245;
     padding: 10px 0;
@@ -115,14 +123,16 @@ nav{
     border-radius: 5px;
 }
 
+/* About Me */
 .header-and-about{
     display: flex;
-    margin-top: -100px;
-    margin-bottom: 100px;
-    padding: 450px;
+    position: relative;
+    justify-content: center;
     font-size: 28px;
     flex-direction: row;
     align-items: center;
+    top: 300px;
+    margin-bottom: 900px;
 }
 
 .about-me-text {
@@ -131,7 +141,6 @@ nav{
     margin: 0px;
     font-weight: lighter;
 }
-
 
 .itallic {
     font-style: italic;
@@ -144,40 +153,36 @@ nav{
     max-width: auto;
 }
 
-
-/*Code for adjusting Project img/links */
-
+/*Code for adjusting Project img & links */
 .projects {
     text-align: center;
 }
 
 .project-container {
     font-weight: normal;
-    padding-top: 200px; 
 
 }
 .h2-projects {
-    position: absolute;
+    position: relative;
     border: solid;
     border-color: #fff;;
-    background-color: #787878;;
+    background-color: #787878;
     border-radius: 20px;
+    border-width: 3px;
+    top: 20px;
+    left: 390px;
     margin: 0px;
-    padding: 20px;
-    max-width: 500px;
-    font-size: 40px;
-    bottom: -1840px;
-    left: 1135px;
+    padding: 10px;
+    max-width: 300px;
+    font-size: 32px;
 }
 
 .image-container {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    left: 30%;
     flex-wrap: wrap;
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px, 0;
 }
 
 .hover-list {
@@ -186,31 +191,21 @@ nav{
 
 /*consolidated same values for hover text*/
 .hover-text, .hover-text2, .hover-text3 {
-    position: absolute;
+    position: relative;
     text-align: left;
-    margin: 0;
-    padding: 0;
-    min-width: 300px;
+    left: 25px;
+    margin: 0px;
+    padding: 0px;
+    min-width: 220px;
     color: #fff;
     opacity: 0;
     transition: opacity 1s;
     pointer-events: none;
 }
 
-.hover-text {
-    left: 1115px;
-    top: 260px;
-}
-
 .hover-text2 {
-    font-size: 13px;
-    left: 1020px;
-    top: 40px;
-}
-
-.hover-text3 {
-    left: 990px;
-    top: 100px;
+    top: 20px;
+    font-size: 12px;
 }
 
 .image-container a:hover .hover-text{
@@ -241,95 +236,125 @@ nav{
     padding: 0px;
     height: 40vh;
     width: auto;
+    margin-bottom: 40px;
 }
 
 .flex-box-images2 {
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: -50px;
     padding: 0px;
     height: 60vh;
     width: auto;
+    margin-bottom: 40px;
 }
 
-.image-container a{
-    position: relative;
-    flex: 1;
-    transition: transform 1s;
-    border-radius: 10px;
-    margin-bottom: 600px;
+.flex-box-images3 {
+    margin-left: 18px;
+    padding: 0px;
+    height: 40vh;
+    width: auto;
+    margin-bottom: 40px;
 }
 
-.image-container a:hover {
+
+.project-text-wrapper {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.image-container a {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    text-decoration: none; 
+}
+
+.project-image-wrapper {
+    flex-shrink: 0; 
     transition: transform 1.6s;
-    transform: scale(1.028);
+}
+
+.image-container a:hover .project-image-wrapper {
+    transform: scale(1.028); 
+    transition: transform 1.6s;
 }
 
 
 .overlay-text {
-    position: absolute;
+    position: relative;
+    right: 498%;
+    top: 200px;
     text-align: left;
     color: #ffffff;
     border: solid;
     border-radius: 5px;
     border-color: #ffffff;
     background-color: #787878;
-    bottom: 80px;
-    left: 12px;
-    padding: 4px;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1.2s;
 }
 
 .overlay-text2 {
-    position: absolute;
+    position: relative;
+    right: 450%;
+    bottom: 100px;
     text-align: left;
     color: #ffffff;
     border: solid;
     border-radius: 5px;
     border-color: #fff;
     background-color: #787878;
-    bottom: 80px;
-    left: 12px;
-    padding: 4px;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1.2s;
 }
 
 .overlay-text3 {
-    position: absolute;
+    position: relative;
+    right: 428%;
+    top: 20px;
     text-align: left;
     color: #ffffff;
     border: solid;
     border-radius: 5px;
     border-color: #000;
     background-color: #787878;
-    bottom: 60px;
-    left: 40px;
-    padding: 4px;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1.2s;
 }
 
 .image-container a:hover .overlay-text {
-    transition: opacity ease-in 1s;
+    transition: opacity ease-in 1.2s;
     opacity: 1;
+    
 }
 
 .image-container a:hover .overlay-text2 {
-    transition: opacity ease-in 1s;
+    transition: opacity ease-in 1.2s;
     opacity: 1;
 }
 
 .image-container a:hover .overlay-text3 {
-    transition: opacity ease-in 1s;
+    transition: opacity ease-in 1.2s;
     opacity: 1;
 }
+
+
+
+
 
 /*Code for adjusting Footer logos */
 .IG-Logo , .GitHub-Cat-Logo {
     height: 6vh;
     width: auto;
     margin: 5px;
+    box-shadow: #3C4245;
+    transition: box-shadow 1s;
 }
+
+.IG-Logo:hover {
+    transition: box-shadow 1s;
+}
+
 
 .footer-bar {
     background-color: #1b1b1d;
@@ -346,16 +371,6 @@ nav{
     align-items: center;
 }
 
-/* gradient style code from https://cssgradient.io/ */
-.footer-bar {
-    background: linear-gradient(90deg, 
-    rgba(27,27,29,1) 0%, 
-    rgba(27,27,29,1) 0.99999999999999%, 
-    rgba(0,124,255,1) 50%, 
-    rgba(27,27,29,1) 99.9999999999999%, 
-    rgba(27,27,29,1) 100%);
-}
-
 .contact-list-text {
     margin: 5px;
     padding: 0 10px;
@@ -367,4 +382,16 @@ nav{
     justify-content: center;
     list-style-type: none;
 }
+
+/* gradient style code from https://cssgradient.io/ */
+.footer-bar {
+    background: linear-gradient(90deg, 
+    rgba(27,27,29,1) 0%, 
+    rgba(27,27,29,1) 0.99999999999999%, 
+    rgba(0,124,255,1) 50%, 
+    rgba(27,27,29,1) 99.9999999999999%, 
+    rgba(27,27,29,1) 100%);
+}
+
+
 
