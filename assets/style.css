@@ -395,12 +395,9 @@ nav{
         visibility: hidden
     }
 
-    body {
-        font-size: 14px; 
-    }
 
     button {
-        font-size: 8px;
+        font-size: 10px;
         justify-content: center;
         position: relative;
         border: solid;
@@ -461,26 +458,20 @@ nav{
         border-width: 8px;
         margin: 0px;
         padding: 0px;
-        height: 20vh;
+        height: 25vh;
         width: auto;
         margin-bottom: 40px;
     }
     
     .flex-box-images2 {
         margin-top: 40px;
-        height: 30vh;
+        height: 35vh;
     }
 
     
-.overlay-text, .overlay-text2, .overlay-text3 {
-    position: relative;
-    text-align: left;
-    color: #ffffff;
-    border: solid;
-    border-radius: 5px;
-    background-color: #787878;
-    opacity: 1;
-}
+    .overlay-text, .overlay-text2, .overlay-text3 {
+        opacity: 0;
+    }
 
     .hover-text, .hover-text2, .hover-text3 {
         position: static;
@@ -488,14 +479,11 @@ nav{
         left: 25px;
         margin: 0px;
         padding: 0px;
-        min-width: 220px;
+        min-width: 120px;
+        max-width: 120px;
         color: #fff;
         opacity: 1;
-    }
-    
-    .hover-text2 {
-        top: 20px;
-        font-size: 12px;
+        font-size: 6px;
     }
     
 
