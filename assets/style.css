@@ -391,6 +391,9 @@ nav{
         box-shadow: 0 0 0 1px red; 
     }*/
     
+    .arrow-up-icon {
+        visibility: hidden
+    }
 
     body {
         font-size: 14px; 
@@ -418,11 +421,6 @@ nav{
         overflow: hidden; 
     }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .header-and-about {
         flex-direction: column;
         align-items: center;
@@ -440,20 +438,19 @@ nav{
 
     .image-container {
         flex-direction: column;
-        align-items: center;
         left: 0;
     }
 
     .h2-projects {
-        position: relative;
+        position:static;
         border: solid;
         border-color: #fff;;
         background-color: #787878;
         border-radius: 10px;
         border-width: 3px;
-        left: -300px;
         margin: 0px;
         font-size: 16px;
+        max-width: fit-content;
     }
 
     .flex-box-images, .flex-box-images2, .flex-box-images3 {
@@ -472,6 +469,33 @@ nav{
     .flex-box-images2 {
         margin-top: 40px;
         height: 30vh;
+    }
+
+    
+.overlay-text, .overlay-text2, .overlay-text3 {
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+    border: solid;
+    border-radius: 5px;
+    background-color: #787878;
+    opacity: 1;
+}
+
+    .hover-text, .hover-text2, .hover-text3 {
+        position: static;
+        text-align: left;
+        left: 25px;
+        margin: 0px;
+        padding: 0px;
+        min-width: 220px;
+        color: #fff;
+        opacity: 1;
+    }
+    
+    .hover-text2 {
+        top: 20px;
+        font-size: 12px;
     }
     
 
