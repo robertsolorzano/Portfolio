@@ -480,11 +480,11 @@ nav {
     }
 
     .footer-bar {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .contact-list {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
