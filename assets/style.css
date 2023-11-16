@@ -7,7 +7,7 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-    box-shadow: 0 0 0 1px red;
+    /*box-shadow: 0 0 0 1px red;*/
 }
 
 /* Arrow Icon */
@@ -489,16 +489,7 @@ nav {
 }
 
 
-
-
-
-
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Debugging to see flex boxes */
-    /** {
-        box-shadow: 0 0 0 1px red;
-    }*/
 
     .arrow-up-icon {
         visibility: hidden;
@@ -613,10 +604,7 @@ nav {
 
 
 @media screen and (max-width: 768px) {
-    /* Debugging to see flex boxes */
-    /** {
-        box-shadow: 0 0 0 1px red;
-    }*/
+
 
     .arrow-up-icon {
         visibility: hidden;
