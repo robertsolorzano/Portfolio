@@ -1,4 +1,4 @@
-/*Importing Google Fonts */
+/* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
@@ -7,8 +7,8 @@
     outline: none;
     border: none;
     box-sizing: border-box;
+    box-shadow: 0 0 0 1px red;
 }
-
 
 /* Arrow Icon */
 .arrow-up-icon {
@@ -26,8 +26,8 @@
 
 .arrow-up-icon:hover {
     border-color: #007cff;
-    transform: scale(0.5); 
-    transition: transform 0.1s ease-in; 
+    transform: scale(0.5);
+    transition: transform 0.1s ease-in;
 }
 
 body {
@@ -46,7 +46,7 @@ body {
 
 .svg-section {
     position: relative;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
@@ -81,18 +81,18 @@ button {
     border-color: #fff;
     border-radius: 20px;
     color: #fff;
-    background-color:transparent;
-    padding: 20px;;
+    background-color: transparent;
+    padding: 20px;
     transition: background-color ease-out 0.5s;
 }
 
 button:hover {
-    background-color:#007cff;
-    transition: background-color  0.5s;
+    background-color: #007cff;
+    transition: background-color 0.5s;
 }
 
 /*Code for adjusting NavBar */
-nav{
+nav {
     background-color: #3C4245;
     padding: 10px 0;
 }
@@ -109,7 +109,7 @@ nav{
     margin: 0;
 }
 
-.link a  {
+.link a {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
@@ -122,7 +122,7 @@ nav{
 }
 
 /* About Me */
-.header-and-about{
+.header-and-about {
     display: flex;
     position: relative;
     justify-content: center;
@@ -134,8 +134,6 @@ nav{
     margin-bottom: 800px;
     overflow: hidden;
 }
-
-
 
 .about-me-text {
     max-width: 1200px;
@@ -160,72 +158,55 @@ nav{
     text-align: center;
 }
 
-.project-container {
-    font-weight: normal;
-
-}
-.h2-projects {
-    position: relative;
-    border: solid;
-    border-color: #fff;;
-    background-color: #787878;
-    border-radius: 20px;
-    border-width: 3px;
-    top: 20px;
-    left: 390px;
-    margin: 0px;
-    padding: 10px;
-    max-width: 300px;
-    font-size: 32px;
-}
-
 .image-container {
     position: relative;
     display: flex;
-    left: 30%;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1000px;
+    margin: 0px auto;
 }
 
-.hover-list {
-    list-style-type: none
-}
-
-/*consolidated same values for hover text*/
-.hover-text, .hover-text2, .hover-text3 {
-    position: relative;
-    text-align: left;
-    left: 25px;
-    margin: 0px;
-    padding: 0px;
-    min-width: 220px;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 1s;
-    pointer-events: none;
-}
-
-.hover-text2 {
-    top: 20px;
-    font-size: 12px;
-}
-
-.image-container a:hover .hover-text{
+.image-container a:hover .hover-text {
     transition: opacity ease-in 1.6s;
     opacity: 1;
 }
 
-.image-container a:hover .hover-text2{
+.image-container a:hover .hover-text2 {
     transition: opacity ease-in 1.6s;
     opacity: 1;
 }
 
-.image-container a:hover .hover-text3{
+.image-container a:hover .hover-text3 {
     transition: opacity ease-in 1.6s;
     opacity: 1;
 }
 
-.flex-box-images, .flex-box-images2, .flex-box-images3 {
+.image-container a:hover .overlay-text {
+    transition: opacity ease-in 1.2s;
+    opacity: 1;
+}
+
+.image-container a:hover .overlay-text2 {
+    transition: opacity ease-in 1.2s;
+    opacity: 1;
+}
+
+.image-container a:hover .overlay-text3 {
+    transition: opacity ease-in 1.2s;
+    opacity: 1;
+}
+
+.image-container a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.flex-box-images,
+.flex-box-images2,
+.flex-box-images3 {
     border-style: solid;
     border-radius: 10px;
     overflow: hidden;
@@ -248,32 +229,62 @@ nav{
     margin-left: 18px;
 }
 
+.h2-projects {
+    position: relative;
+    border: solid;
+    font-weight: normal;
+    border-color: #fff;
+    background-color: #787878;
+    border-radius: 20px;
+    border-width: 3px;
+    padding: 10px;
+    max-width: 300px;
+    font-size: 32px;
+}
 
+
+.hover-text,
+.hover-text2,
+.hover-text3 {
+    position: relative;
+    text-align: left;
+    left: 25px;
+    margin: 0px;
+    padding: 0px;
+    min-width: 220px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none;
+}
+
+.hover-list {
+    list-style-type: none
+}
+
+.hover-text2 {
+    top: 20px;
+    font-size: 12px;
+}
 
 .project-text-wrapper {
     flex-grow: 1;
     min-width: 0;
 }
 
-.image-container a {
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    text-decoration: none; 
-}
-
 .project-image-wrapper {
-    flex-shrink: 0; 
+    flex-shrink: 0;
     transition: transform 1.6s;
 }
 
 .image-container a:hover .project-image-wrapper {
-    transform: scale(1.028); 
+    transform: scale(1.028);
     transition: transform 1.6s;
 }
 
-
-.overlay-text, .overlay-text2, .overlay-text3 {
+.overlay-text,
+.overlay-text2,
+.overlay-text3 {
     position: relative;
     text-align: left;
     color: #ffffff;
@@ -302,34 +313,15 @@ nav{
     border-color: #000;
 }
 
-
-.image-container a:hover .overlay-text {
-    transition: opacity ease-in 1.2s;
-    opacity: 1;
-    
-}
-
-.image-container a:hover .overlay-text2 {
-    transition: opacity ease-in 1.2s;
-    opacity: 1;
-}
-
-.image-container a:hover .overlay-text3 {
-    transition: opacity ease-in 1.2s;
-    opacity: 1;
-}
-
-
-
-
 /*Code for adjusting Footer logos */
-.IG-Logo , .GitHub-Cat-Logo {
+.IG-Logo,
+.GitHub-Cat-Logo {
     height: 6vh;
     width: auto;
     margin: 5px;
     padding: 5px;
-    box-shadow: 0px 0px 0px #6a7073; 
-    transition: box-shadow 0.5s; 
+    box-shadow: 0px 0px 0px #6a7073;
+    transition: box-shadow 0.5s;
 }
 
 .IG-Logo {
@@ -341,7 +333,8 @@ nav{
 }
 
 /* Add hover styles for the logos */
-.IG-Logo:hover, .GitHub-Cat-Logo:hover {
+.IG-Logo:hover,
+.GitHub-Cat-Logo:hover {
     box-shadow: 0px 0px 20px #3C4245;
 }
 
@@ -372,30 +365,22 @@ nav{
     list-style-type: none;
 }
 
-
 /* gradient style code from https://cssgradient.io/ */
 .footer-bar {
     background: linear-gradient(90deg, 
-    rgba(27,27,29,1) 0%, 
-    rgba(27,27,29,1) 0.99999999999999%, 
-    rgba(0,124,255,1) 50%, 
-    rgba(27,27,29,1) 99.9999999999999%, 
-    rgba(27,27,29,1) 100%);
+    rgba(27, 27, 29, 1) 0%, 
+    rgba(27, 27, 29, 1) 0.99999999999999%, 
+    rgba(0, 124, 255, 1) 50%, 
+    rgba(27, 27, 29, 1) 99.9999999999999%, 
+    rgba(27, 27, 29, 1) 100%);
 }
 
 
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
 
-@media screen and (max-width: 768px) {  
-
-    /* Debugging to see flex boxes */
-    /** {
-        box-shadow: 0 0 0 1px red; 
-    }*/
-    
     .arrow-up-icon {
-        visibility: hidden
+        visibility: hidden;
     }
-
 
     button {
         font-size: 10px;
@@ -405,32 +390,34 @@ nav{
         border-color: #fff;
         border-radius: 20px;
         color: #fff;
-        background-color:transparent;
-        padding: 8px;;
+        background-color: transparent;
+        padding: 8px;
         transition: background-color ease-out 0.5s;
     }
 
     .svg-bg {
-        width: 100%; 
-        height: 100vh; 
+        width: 100%;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden; 
+        overflow: hidden;
     }
 
     .header-and-about {
         flex-direction: column;
         align-items: center;
-        top: 150px; 
+        top: 150px;
         margin-bottom: 500px;
     }
 
-    .about-me-text, .svg-text {
-        font-size: 24px; 
+    .about-me-text,
+    .svg-text {
+        font-size: 24px;
     }
 
-    .projects, .project-container {
+    .projects,
+    .project-container {
         padding: 0 20px;
     }
 
@@ -440,9 +427,9 @@ nav{
     }
 
     .h2-projects {
-        position:static;
+        position: static;
         border: solid;
-        border-color: #fff;;
+        border-color: #fff;
         background-color: #787878;
         border-radius: 10px;
         border-width: 3px;
@@ -451,7 +438,9 @@ nav{
         max-width: fit-content;
     }
 
-    .flex-box-images, .flex-box-images2, .flex-box-images3 {
+    .flex-box-images,
+    .flex-box-images2,
+    .flex-box-images3 {
         border-style: solid;
         border-radius: 10px;
         overflow: hidden;
@@ -463,18 +452,21 @@ nav{
         width: auto;
         margin-bottom: 40px;
     }
-    
+
     .flex-box-images2 {
         margin-top: 40px;
         height: 35vh;
     }
 
-    
-    .overlay-text, .overlay-text2, .overlay-text3 {
+    .overlay-text,
+    .overlay-text2,
+    .overlay-text3 {
         opacity: 0;
     }
 
-    .hover-text, .hover-text2, .hover-text3 {
+    .hover-text,
+    .hover-text2,
+    .hover-text3 {
         position: static;
         text-align: left;
         left: 25px;
@@ -486,7 +478,6 @@ nav{
         opacity: 1;
         font-size: 6px;
     }
-    
 
     .footer-bar {
         flex-direction: column;
@@ -497,5 +488,244 @@ nav{
     }
 }
 
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Debugging to see flex boxes */
+    /** {
+        box-shadow: 0 0 0 1px red;
+    }*/
+
+    .arrow-up-icon {
+        visibility: hidden;
+    }
+
+    button {
+        font-size: 10px;
+        justify-content: center;
+        position: relative;
+        border: solid;
+        border-color: #fff;
+        border-radius: 20px;
+        color: #fff;
+        background-color: transparent;
+        padding: 8px;
+        transition: background-color ease-out 0.5s;
+    }
+
+    .svg-bg {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .header-and-about {
+        flex-direction: column;
+        align-items: center;
+        top: 150px;
+        margin-bottom: 500px;
+    }
+
+    .about-me-text,
+    .svg-text {
+        font-size: 24px;
+    }
+
+    .projects,
+    .project-container {
+        padding: 0 20px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        left: 0;
+    }
+
+    .h2-projects {
+        position: static;
+        border: solid;
+        border-color: #fff;
+        background-color: #787878;
+        border-radius: 10px;
+        border-width: 3px;
+        margin: 0px;
+        font-size: 16px;
+        max-width: fit-content;
+    }
+
+    .flex-box-images,
+    .flex-box-images2,
+    .flex-box-images3 {
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        border-color: #787878;
+        border-width: 8px;
+        margin: 0px;
+        padding: 0px;
+        height: 25vh;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    .flex-box-images2 {
+        margin-top: 40px;
+        height: 35vh;
+    }
+
+    .overlay-text,
+    .overlay-text2,
+    .overlay-text3 {
+        opacity: 0;
+    }
+
+    .hover-text,
+    .hover-text2,
+    .hover-text3 {
+        position: static;
+        text-align: left;
+        left: 25px;
+        margin: 0px;
+        padding: 0px;
+        min-width: 120px;
+        max-width: 120px;
+        color: #fff;
+        opacity: 1;
+        font-size: 6px;
+    }
+
+    .footer-bar {
+        flex-direction: column;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /* Debugging to see flex boxes */
+    /** {
+        box-shadow: 0 0 0 1px red;
+    }*/
+
+    .arrow-up-icon {
+        visibility: hidden;
+    }
+
+    button {
+        font-size: 10px;
+        justify-content: center;
+        position: relative;
+        border: solid;
+        border-color: #fff;
+        border-radius: 20px;
+        color: #fff;
+        background-color: transparent;
+        padding: 8px;
+        transition: background-color ease-out 0.5s;
+    }
+
+    .svg-bg {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .header-and-about {
+        flex-direction: column;
+        align-items: center;
+        top: 150px;
+        margin-bottom: 500px;
+    }
+
+    .about-me-text,
+    .svg-text {
+        font-size: 24px;
+    }
+
+    .projects,
+    .project-container {
+        padding: 0 20px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        left: 0;
+    }
+
+    .h2-projects {
+        position: static;
+        border: solid;
+        border-color: #fff;
+        background-color: #787878;
+        border-radius: 10px;
+        border-width: 3px;
+        margin: 0px;
+        font-size: 16px;
+        max-width: fit-content;
+    }
+
+    .flex-box-images,
+    .flex-box-images2,
+    .flex-box-images3 {
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        border-color: #787878;
+        border-width: 8px;
+        margin: 0px;
+        padding: 0px;
+        height: 25vh;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    .flex-box-images2 {
+        margin-top: 40px;
+        height: 35vh;
+    }
+
+    .overlay-text,
+    .overlay-text2,
+    .overlay-text3 {
+        opacity: 0;
+    }
+
+    .hover-text,
+    .hover-text2,
+    .hover-text3 {
+        position: static;
+        text-align: left;
+        left: 25px;
+        margin: 0px;
+        padding: 0px;
+        min-width: 120px;
+        max-width: 120px;
+        color: #fff;
+        opacity: 1;
+        font-size: 6px;
+    }
+
+    .footer-bar {
+        flex-direction: column;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+}
 
 
