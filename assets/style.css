@@ -716,4 +716,115 @@ nav {
     }
 }
 
+@media screen and (max-width: 430px) {
+    .arrow-up-icon {
+        visibility: hidden;
+    }
 
+    button {
+        font-size: 10px;
+        justify-content: center;
+        position: relative;
+        border: solid;
+        border-color: #fff;
+        border-radius: 20px;
+        color: #fff;
+        background-color: transparent;
+        padding: 8px;
+        transition: background-color ease-out 0.5s;
+    }
+
+    .svg-bg {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .header-and-about {
+        flex-direction: column;
+        align-items: center;
+        top: 150px;
+        margin-bottom: 500px;
+    }
+
+    .about-me-text,
+    .svg-text {
+        font-size: 24px;
+    }
+
+    .projects,
+    .project-container {
+        padding: 0 20px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        left: 0;
+    }
+
+    .h2-projects {
+        position: static;
+        border: solid;
+        border-color: #fff;
+        background-color: #787878;
+        border-radius: 10px;
+        border-width: 3px;
+        margin: 0px;
+        font-size: 16px;
+        max-width: fit-content;
+    }
+
+    .flex-box-images,
+    .flex-box-images2,
+    .flex-box-images3 {
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        border-color: #787878;
+        border-width: 8px;
+        margin: 0px;
+        padding: 0px;
+        height: 15vh;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    .flex-box-images2 {
+        margin-top: 40px;
+        height: 20vh;
+    }
+
+    .overlay-text,
+    .overlay-text2,
+    .overlay-text3 {
+        opacity: 0;
+    }
+
+    .hover-text,
+    .hover-text2,
+    .hover-text3 {
+        position: relative;
+        text-align: left;
+        left: 5px;
+        margin: 0px;
+        padding: 0px;
+        min-width: 80px;
+        max-width: 80px;
+        color: #fff;
+        opacity: 1;
+        font-size: 4px;
+    }
+
+    .footer-bar {
+        flex-direction: column;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+
+
+}
