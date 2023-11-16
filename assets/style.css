@@ -413,7 +413,7 @@ nav {
 
     .about-me-text,
     .svg-text {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .projects,
@@ -589,7 +589,7 @@ nav {
         max-width: 120px;
         color: #fff;
         opacity: 1;
-        font-size: 6px;
+        font-size: 7px;
     }
 
     .footer-bar {
@@ -697,11 +697,11 @@ nav {
     .hover-text3 {
         position: relative;
         text-align: left;
-        left: 25px;
+        left: 5px;
         margin: 0px;
         padding: 0px;
-        min-width: 120px;
-        max-width: 120px;
+        min-width: 100px;
+        max-width: 100px;
         color: #fff;
         opacity: 1;
         font-size: 6px;
