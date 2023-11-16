@@ -467,15 +467,15 @@ nav {
     .hover-text,
     .hover-text2,
     .hover-text3 {
-        position: static;
+        position: relative;
         text-align: left;
-        left: 25px;
+        left: 15px;
         margin: 0px;
         padding: 0px;
         min-width: 120px;
         max-width: 120px;
         color: #fff;
-        opacity: 1;
+        opacity: 0;
         font-size: 6px;
     }
 
@@ -580,9 +580,9 @@ nav {
     .hover-text,
     .hover-text2,
     .hover-text3 {
-        position: static;
+        position: relative;
         text-align: left;
-        left: 25px;
+        left: 10px;
         margin: 0px;
         padding: 0px;
         min-width: 120px;
@@ -695,7 +695,7 @@ nav {
     .hover-text,
     .hover-text2,
     .hover-text3 {
-        position: static;
+        position: relative;
         text-align: left;
         left: 25px;
         margin: 0px;
