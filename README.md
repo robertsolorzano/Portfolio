@@ -1,8 +1,8 @@
 # Portfolio
 
-My ever-growing and updating Portfolio. 
+My ever-growing and always-updated portfolio is a reflection of my ongoing tech journey. 
 <br>
-Please stay tuned for future projects.
+I'll be dropping more cool projects in the future, so stay tuned!
 
 
 ## Link
