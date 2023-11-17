@@ -7,7 +7,7 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-    /*box-shadow: 0 0 0 1px red; used for debbuging*/
+    /*box-shadow: 0 0 0 1px red;*/
 }
 
 html {
@@ -134,21 +134,21 @@ nav {
     font-size: 28px;
     flex-direction: row;
     align-items: center;
-    top: 300px;
+    top: 380px;
     margin: auto;
-    margin-bottom: 800px;
+    margin-bottom: 890px;
     overflow: hidden;
 }
 
 .about-me-text {
     max-width: 1200px;
     padding: 0px;
-    margin: 10px;
+    margin: 20px;
     font-weight: lighter;
 }
 
 .about-me-header {
-    margin: 10px;
+    margin: 20px;
 }
 
 .itallic {
@@ -156,7 +156,7 @@ nav {
 }
 
 .RS-logo {
-    margin-left: 2px;
+    margin-right: 20px;
     padding-left: 2px;
     height: 40vh;
     max-width: auto;
@@ -225,11 +225,18 @@ nav {
     padding: 0px;
     height: 40vh;
     width: auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.5s;
+}
+
+.flex-box-images:hover,
+.flex-box-images2:hover,
+.flex-box-images3:hover {
+    box-shadow: 0 0 10px #b8b8b880;
 }
 
 .flex-box-images2 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: -50px;
     height: 60vh;
 }
@@ -244,11 +251,10 @@ nav {
     font-weight: normal;
     border-color: #fff;
     background-color: #787878;
-    border-radius: 20px;
+    border-radius: 10px;
     border-width: 3px;
     padding: 10px;
-    max-width: 300px;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 
@@ -295,7 +301,7 @@ nav {
 .overlay-text2,
 .overlay-text3 {
     position: relative;
-    text-align: left;
+    text-align: center;
     color: #ffffff;
     border: solid;
     border-radius: 5px;
@@ -420,6 +426,11 @@ nav {
         margin-bottom: 500px;
     }
 
+    .RS-logo {
+        height: 35vh;
+        width: auto;
+    }
+
 
     .svg-text {
         font-size: 60px;
@@ -436,19 +447,18 @@ nav {
     }
 
     .h2-projects {
-        position: static;
+        position: relative;
         border: solid;
         border-color: #fff;
         background-color: #787878;
         border-radius: 10px;
         border-width: 3px;
-        margin: 0px;
+        margin: 20px;
         font-size: 22px;
         max-width: fit-content;
     }
 
     .flex-box-images,
-    .flex-box-images2,
     .flex-box-images3 {
         border-style: solid;
         border-radius: 10px;
@@ -457,14 +467,22 @@ nav {
         border-width: 8px;
         margin: 0px;
         padding: 0px;
-        height: 25vh;
+        height: 28vh;
         width: auto;
         margin-bottom: 40px;
     }
 
     .flex-box-images2 {
-        margin-top: 40px;
-        height: 35vh;
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        border-color: #787878;
+        border-width: 8px;
+        margin: 0px;
+        padding: 0px;
+        height: 40vh;
+        width: auto;
+        margin-bottom: 40px;
     }
 
     .overlay-text,
@@ -504,8 +522,9 @@ nav {
         visibility: hidden;
     }
 
+
     button {
-        font-size: 10px;
+        font-size: 14px;
         justify-content: center;
         position: relative;
         border: solid;
@@ -530,11 +549,16 @@ nav {
         flex-direction: column;
         align-items: center;
         top: 150px;
-        margin-bottom: 500px;
+        margin-bottom: 250px;
+    }
+
+    .RS-logo {
+        height: 30vh;
+        width: auto;
     }
 
     .svg-text {
-        font-size: 36px;
+        font-size: 45px;
     }
 
     .about-me-text {
@@ -648,7 +672,142 @@ nav {
         flex-direction: column;
         align-items: center;
         top: 150px;
-        margin-bottom: 500px;
+        margin-bottom: 200px;
+    }
+
+    .svg-text {
+        font-size: 24px;
+    }
+
+    .about-me-text {
+        font-size: 20px;
+    }
+
+
+    .project-link {
+        width: 20vh;
+    }
+
+    .projects,
+    .project-container {
+        padding: 0 20px;
+    }
+
+    .RS-logo {
+        height: 25vh;
+        width: auto;
+    }
+
+    .image-container {
+        flex-direction: column;
+        left: 0;
+    }
+
+    .h2-projects {
+        position: relative;
+        border: solid;
+        border-color: #fff;
+        background-color: #787878;
+        border-radius: 10px;
+        border-width: 3px;
+        margin: 0px;
+        font-size: 16px;
+        max-width: fit-content;
+    }
+
+    .flex-box-images,
+    .flex-box-images2,
+    .flex-box-images3 {
+        border-style: solid;
+        border-radius: 10px;
+        overflow: hidden;
+        border-color: #787878;
+        border-width: 8px;
+        margin: 0px;
+        padding: 0px;
+        height: 20vh;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    .flex-box-images2 {
+        margin-top: 40px;
+        height: 30vh;
+    }
+
+    .overlay-text,
+    .overlay-text2,
+    .overlay-text3 {
+        opacity: 0;
+    }
+
+    .hover-text,
+    .hover-text3 {
+        text-align: left;
+        left: 5px;
+        margin: 0px;
+        padding: 0px;
+        min-width: 100px;
+        max-width: 100px;
+        color: #fff;
+        opacity: 1;
+        font-size: 6px;
+    }
+
+    .hover-text2 {
+        text-align: left;
+        left: 5px;
+        margin: 0px;
+        padding: 0px;
+        min-width: 90px;
+        max-width: 90px;
+        color: #fff;
+        opacity: 1;
+        font-size: 5px; 
+    }
+
+    .footer-bar {
+        flex-direction: column;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 649px) {
+    .arrow-up-icon {
+        visibility: hidden;
+    }
+
+    button {
+        font-size: 10px;
+        justify-content: center;
+        position: relative;
+        border: solid;
+        border-color: #fff;
+        border-radius: 20px;
+        color: #fff;
+        background-color: transparent;
+        padding: 8px;
+        transition: background-color ease-out 0.5s;
+    }
+
+    .svg-bg {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .header-and-about {
+        flex-direction: column;
+        align-items: center;
+        top: 150px;
+        margin-bottom: 220px;
     }
 
     .about-me-text,
@@ -688,14 +847,14 @@ nav {
         border-width: 8px;
         margin: 0px;
         padding: 0px;
-        height: 25vh;
+        height: 15vh;
         width: auto;
         margin-bottom: 40px;
     }
 
     .flex-box-images2 {
         margin-top: 40px;
-        height: 35vh;
+        height: 20vh;
     }
 
     .overlay-text,
@@ -712,11 +871,11 @@ nav {
         left: 5px;
         margin: 0px;
         padding: 0px;
-        min-width: 100px;
-        max-width: 100px;
+        min-width: 80px;
+        max-width: 80px;
         color: #fff;
         opacity: 1;
-        font-size: 6px;
+        font-size: 4px;
     }
 
     .footer-bar {
@@ -726,7 +885,12 @@ nav {
     .contact-list {
         flex-direction: column;
     }
+
+
 }
+
+
+
 
 @media screen and (max-width: 430px) {
     .arrow-up-icon {
@@ -759,9 +923,9 @@ nav {
         flex-direction: column;
         align-items: center;
         top: 150px;
-        margin-bottom: 500px;
+        margin-bottom: 220px;
     }
-
+    
     .about-me-text,
     .svg-text {
         font-size: 24px;
