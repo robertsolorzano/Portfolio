@@ -9,9 +9,9 @@ I'll be dropping more projects in the future, so stay tuned!
 Link: [Robert Solorzano's Portfolio](https://robertsolorzano.github.io/Portfolio/)
 
 
-## Screenshot
+## Preview
 
-![Preview](assets/images/preview.jpeg)
+![Preview](assets/images/Portfolio%20Preview%20Vid%20Cropped.mp4)
 
 
 ## Credits
