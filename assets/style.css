@@ -10,6 +10,10 @@
     /*box-shadow: 0 0 0 1px red; used for debbuging*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Arrow Icon */
 .arrow-up-icon {
     position: fixed;
@@ -22,6 +26,7 @@
     padding-top: 5px;
     border-radius: 90%;
     transition: transform 0.3s ease-out, border-color 0.3s ease-out;
+
 }
 
 .arrow-up-icon:hover {
@@ -138,8 +143,12 @@ nav {
 .about-me-text {
     max-width: 1200px;
     padding: 0px;
-    margin: 0px;
+    margin: 10px;
     font-weight: lighter;
+}
+
+.about-me-header {
+    margin: 10px;
 }
 
 .itallic {
@@ -258,14 +267,14 @@ nav {
     pointer-events: none;
 }
 
+.hover-text2 {
+    font-size: 12px;
+}
+
 .hover-list {
     list-style-type: none
 }
 
-.hover-text2 {
-    top: 20px;
-    font-size: 12px;
-}
 
 .project-text-wrapper {
     flex-grow: 1;
@@ -297,7 +306,7 @@ nav {
 
 .overlay-text {
     right: 498%;
-    top: 200px;
+    top: 130px;
     border-color: #ffffff;
 }
 
@@ -383,7 +392,7 @@ nav {
     }
 
     button {
-        font-size: 10px;
+        font-size: 16px;
         justify-content: center;
         position: relative;
         border: solid;
@@ -411,9 +420,9 @@ nav {
         margin-bottom: 500px;
     }
 
-    .about-me-text,
+
     .svg-text {
-        font-size: 20px;
+        font-size: 60px;
     }
 
     .projects,
@@ -434,7 +443,7 @@ nav {
         border-radius: 10px;
         border-width: 3px;
         margin: 0px;
-        font-size: 16px;
+        font-size: 22px;
         max-width: fit-content;
     }
 
@@ -472,11 +481,11 @@ nav {
         left: 15px;
         margin: 0px;
         padding: 0px;
-        min-width: 120px;
-        max-width: 120px;
+        min-width: 320px;
+        max-width: 320px;
         color: #fff;
         opacity: 0;
-        font-size: 6px;
+        font-size: 10px;
     }
 
     .footer-bar {
@@ -524,9 +533,12 @@ nav {
         margin-bottom: 500px;
     }
 
-    .about-me-text,
     .svg-text {
-        font-size: 24px;
+        font-size: 36px;
+    }
+
+    .about-me-text {
+        font-size: 22px;
     }
 
     .projects,
