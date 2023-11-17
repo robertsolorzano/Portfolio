@@ -2,7 +2,7 @@
 
 My ever-growing and always-updated portfolio is a reflection of my ongoing tech journey. 
 <br>
-I'll be dropping more cool projects in the future, so stay tuned!
+I'll be dropping more projects in the future, so stay tuned!
 
 
 ## Link
