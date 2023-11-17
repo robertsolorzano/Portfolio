@@ -6,7 +6,7 @@ I'll be dropping more projects in the future, so stay tuned!
 
 
 ## Link
-Link: [Horiseon: Leader in SEO & Marketing](https://robertsolorzano.github.io/Horiseon/)
+Link: [Robert Solorzano's Portfolio](https://robertsolorzano.github.io/Portfolio/)
 
 
 ## Screenshot
@@ -16,7 +16,7 @@ Link: [Horiseon: Leader in SEO & Marketing](https://robertsolorzano.github.io/Ho
 
 ## Credits
 
-**Sources for studying, style icons, and svg content:**
+**Sources for Studying, CSS Styles, Style icons, and Svg content:**
 
 [SVG Waves BG Generator](https://wickedbackgrounds.com/app)
 
