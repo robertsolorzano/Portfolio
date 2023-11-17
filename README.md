@@ -11,6 +11,7 @@ Link: [Robert Solorzano's Portfolio](https://robertsolorzano.github.io/Portfolio
 
 ## Preview
 
+![Preview](assets/images/preview.jpeg)
 
 
 ## Credits
