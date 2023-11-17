@@ -1,6 +1,6 @@
 # Portfolio
 
-My ever-growing and always-updated portfolio is a reflection of my ongoing tech journey. 
+My ever-growing and always-updating Portfolio is a reflection of my ongoing tech journey. 
 <br>
 I'll be dropping more projects in the future, so stay tuned!
 
